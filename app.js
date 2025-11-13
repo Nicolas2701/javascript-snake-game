@@ -33,7 +33,7 @@ function initElement() {
 function createGameArea() {
   gameAreaContext.fillStyle = '#FFFFFF';
   gameAreaContext.fillRect(0, 0, gameAreaWidth, gameAreaHeight);
-  gameAreaContext.strokeStyle = '#000000';
+  gameAreaContext.strokeStyle = '#0004ffff';
   gameAreaContext.strokeRect(0, 0, gameAreaWidth, gameAreaHeight);
 }
 
@@ -60,7 +60,7 @@ function writeScore() {
 }
 
 function createSquare(x, y) {
-  gameAreaContext.fillStyle = '#33ee55ff';
+  gameAreaContext.fillStyle = '#ff0000ff';
   gameAreaContext.fillRect(x * cellWidth, y * cellWidth, cellWidth, cellWidth);
 }
 
