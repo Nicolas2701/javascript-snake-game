@@ -31,9 +31,9 @@ function initElement() {
 
 // Create game area
 function createGameArea() {
-  gameAreaContext.fillStyle = '#FFFFFF';
+  gameAreaContext.fillStyle = '#0000ffff';
   gameAreaContext.fillRect(0, 0, gameAreaWidth, gameAreaHeight);
-  gameAreaContext.strokeStyle = '#0004ffff';
+  gameAreaContext.strokeStyle = '#000000ff';
   gameAreaContext.strokeRect(0, 0, gameAreaWidth, gameAreaHeight);
 }
 
