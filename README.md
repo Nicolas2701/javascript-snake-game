@@ -1,5 +1,5 @@
 # JavaScript Snake Game Workshop
-
+test
 ## Get ready
 10min
 

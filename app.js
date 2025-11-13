@@ -110,7 +110,7 @@ function updateGameArea() {
     
   
   
-  // make snake hit the wall
+  // make snake hit the wall test
   if(checkSnakeOutOfBounds(snakeX, snakeY, isSnakeOnItself)) {
     writeScore();
     clearInterval(timer);
