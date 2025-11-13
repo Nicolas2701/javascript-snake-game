@@ -55,7 +55,7 @@ function snakeOnItself(x, y, array) {
 
 function writeScore() {
   gameAreaContext.font = '50px sans-serif';
-  gameAreaContext.fillStyle = '#0015ffff';
+  gameAreaContext.fillStyle = '#ff0000ff';
   gameAreaContext.fillText('Score: ' + playerScore, (gameAreaWidth / 2) - 100, gameAreaHeight / 2);
 }
 
