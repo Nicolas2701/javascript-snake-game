@@ -60,7 +60,7 @@ function writeScore() {
 }
 
 function createSquare(x, y) {
-  gameAreaContext.fillStyle = '#ff0000ff';
+  gameAreaContext.fillStyle = '#09ff00ff';
   gameAreaContext.fillRect(x * cellWidth, y * cellWidth, cellWidth, cellWidth);
 }
 
