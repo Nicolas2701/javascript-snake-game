@@ -4,6 +4,10 @@ var gameStart = {},
   gameSpeed = {},
   gameArea = {},
   manualStep = {},
+  up = {},
+  left = {},
+  right = {},
+  down = {},
   gameAreaContext = {},          
   snake = [],
   gameAreaWidth = 0,
@@ -20,6 +24,10 @@ function initElement() {
   gameSpeed = document.querySelector('#gameSpeed');
   gameArea = document.querySelector('#gameArea');
   manualStep = document.querySelector('#manualStep');
+  up = document.querySelector('#up');
+  right = document.querySelector('#right');
+  left = document.querySelector('#left');
+  down = document.querySelector('#down');
 
   gameAreaContext = gameArea.getContext('2d');
   gameAreaWidth = 400;
@@ -208,13 +216,31 @@ function changeDirection(e) {
   else if (keys == '37' && snakeDirection != 'right') snakeDirection = 'left';
 }
 
-
+function changeDirectionup(){
+snakeDirection = 'up';
+}
+function changeDirectiondown(){
+ snakeDirection = 'down';
+}
+ function changeDirectionright(){
+snakeDirection = 'right';
+}
+ function changeDirectionleft(){
+snakeDirection = 'left';
+}
 
 function initEvent() {
   gameStart.addEventListener('click', onStartGame);
   manualStep.addEventListener('click', stepOnClick)
+  up.addEventListener('click', changeDirectionup)
+  down.addEventListener('click', changeDirectiondown)
+  right.addEventListener('click', changeDirectionright)
+  left.addEventListener('click', changeDirectionleft)
   window.addEventListener('keydown', changeDirection);
 }
+
+
+
 
 function init() {
   initElement();
